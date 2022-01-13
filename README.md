@@ -4,10 +4,10 @@
 This project and README.md file were created on January 12th 2022
 
 ### Project Title
-Replace the Project Title
+my_bikeshare
 
 ### Description
-Describe what your project is about and what it does
+The bikeshare project focuses on data exploration with descriptive analysis about bike share usage in three cities in the US. The exploration is done through Python code with the main use of the pandas library. For educational purposes.
 
 ### Files used
 Include the files used
