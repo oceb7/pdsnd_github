@@ -127,12 +127,12 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    common_start_stat = df['Start Station'].mode()[0]
-    print('\nThe Most Common Start Station is:\n',common_start_stat)
+    common_start_station = df['Start Station'].mode()[0]
+    print('\nThe Most Common Start Station is:\n',common_start_station)
 
     # display most commonly used end station
-    common_end_stat = df['End Station'].mode()[0]
-    print('\nThe Most Common End Station is:\n',common_end_stat)
+    common_end_station = df['End Station'].mode()[0]
+    print('\nThe Most Common End Station is:\n',common_end_station)
 
     # display most frequent combination of start station and end station trip
     df['Start to End Stations'] = df['Start Station'] + df['End Station']
@@ -157,7 +157,7 @@ def trip_duration_stats(df):
     print('\nThe total Travel Time is:\n {} hour(s) {} minute(s) and {} second(s)\n'.format(h,m,s))
 
     # display mean travel time
-    mean_travel_time = round(df['Trip Duration'].mean())
+    average_travel_time = round(df['Trip Duration'].mean())
     m,s = divmod(mean_travel_time,60)
 
     if m > 60:
